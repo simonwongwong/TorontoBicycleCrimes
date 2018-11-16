@@ -19,7 +19,7 @@ title: Toronto Bicycle-related Crime Statistics (2014 - 2017)
 description: A report on Toronto's bicycle related crimes between 2014 and 2017
 
 
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/TorontoBicycleCrimes" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
