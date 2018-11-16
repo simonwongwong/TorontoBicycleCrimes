@@ -22,8 +22,8 @@ Think your bike is safe? Check the heat map to see where bike thefts are reporte
 
 The data shows that bicycle crimes have increased in 2016 and 2017 compared to 2014 and 2015:
 
-![yearly plot](plots/yearly.png)
+![yearly plot](./plots/yearly.png)
 
 Bicycle-related crimes (mostly theft) spike during the warmer months and slow down during the winter, which makes sense due to lower ridership:
 
-![monthly plot](plots/monthyear.png)
+![monthly plot](./plots/monthyear.png)
