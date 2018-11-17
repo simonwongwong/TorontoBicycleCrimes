@@ -9,8 +9,8 @@ var ebike_pts = [[43.65745929999998, -79.4028244], [43.6625366, -79.458831799999
 function initial_map() {
   heatmap = L.map(
     'heatmap', {
-      center: [43.6532, -79.3832],
-      zoom: 13,
+      center: [43.7, -79.3],
+      zoom: 11,
       maxBounds: null,
       layers: [],
       worldCopyJump: false,
@@ -39,7 +39,7 @@ function initial_map() {
       blur: 15,
       gradient: null
     })
-    .addTo(heatmap);  
+    .addTo(heatmap);
 
 }
 
@@ -52,8 +52,8 @@ function generate_heatmap(map_type) {
 
   heatmap = L.map(
     'heatmap', {
-      center: [43.6532, -79.3832],
-      zoom: 13,
+      center: [43.7, -79.3],
+      zoom: 11,
       maxBounds: null,
       layers: [],
       worldCopyJump: false,
@@ -75,7 +75,7 @@ function generate_heatmap(map_type) {
 
   var heatmap_pts
 
-  switch(map_type) {
+  switch (map_type) {
     case "crime": heatmap_pts = crime_pts; break;
     case "theft": heatmap_pts = theft_pts; break;
     case "be": heatmap_pts = be_pts; break;

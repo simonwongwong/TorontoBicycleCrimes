@@ -5,7 +5,9 @@ The Toronto Police Service publishes interesting datasets on their [public safet
 Note: the data presented only reflects **reported** crimes, which may not reflect actual bicycle-related crime in the city
 
 ## Heat Maps
-Think your bike is safe? Check the heat map to see where bike thefts are reported
+Think your bike is safe? Check the heat map to see where bike thefts are reported.
+
+Unsurprisingly, the one place where there are no reported bicycle related crimes is the Bridle Path. 
 <div class="tab">
   <button class="tablinks" onclick="generate_heatmap('crime')">All crimes</button>
   <button class="tablinks" onclick="generate_heatmap('theft')">Thefts</button>
@@ -14,9 +16,17 @@ Think your bike is safe? Check the heat map to see where bike thefts are reporte
 </div>
 
 <div class="folium-map" id="heatmap" style="width: 100%; height: 400px"></div>
-<script type="text/javascript" src="maps/theft_map.js"></script>
+<script type="text/javascript" src="maps/heatmaps.js"></script>
 <script type="text/javascript">initial_map()</script>
 
+## Neighbourhoods
+Each crime is listed with the neighbourhood of where the crime occurred! Waterfront Communities - The Island comes in first place with almost 1400 reported incidents over 4 years and Pleasant View comes in last with only **5**.
+
+Here the top 20 neighbourhoods for most crimes and fewest crimes:
+
+![worst neighbourhoods](plots/worst_neighbourhoods.png)
+
+![best neighbourhoods](plots/best_neighbourhoods.png)
 
 ## Yearly Data
 
