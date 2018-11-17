@@ -7,6 +7,8 @@ var ebike_pts = [[43.65745929999998, -79.4028244], [43.6625366, -79.458831799999
 
 
 function initial_map() {
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById("crime").className += " active";
   heatmap = L.map(
     'heatmap', {
       center: [43.7, -79.3],
@@ -49,6 +51,14 @@ function generate_heatmap(map_type) {
   heatmap.remove();
   document.getElementById('heatmap').innerHTML = '<div class="folium-map" id="heatmap" style="width: 100%; height: 400px"></div>';
 
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(map_type).className += " active";
 
   heatmap = L.map(
     'heatmap', {

@@ -9,10 +9,10 @@ Think your bike is safe? Check the heat map to see where bike thefts are reporte
 
 Unsurprisingly, the one place where there are no reported bicycle related crimes is the Bridle Path. 
 <div class="tab">
-  <button class="tablinks" onclick="generate_heatmap('crime')">All crimes</button>
-  <button class="tablinks" onclick="generate_heatmap('theft')">Thefts</button>
-  <button class="tablinks" onclick="generate_heatmap('be')">Breaking & Entering</button>
-  <button class="tablinks" onclick="generate_heatmap('ebike')">E-Bike crimes</button>
+  <button id="crime" class="tablinks" onclick="generate_heatmap('crime')">All crimes</button>
+  <button id="theft" class="tablinks" onclick="generate_heatmap('theft')">Thefts</button>
+  <button id="be" class="tablinks" onclick="generate_heatmap('be')">Breaking & Entering</button>
+  <button id="ebike" class="tablinks" onclick="generate_heatmap('ebike')">E-Bike crimes</button>
 </div>
 
 <div class="folium-map" id="heatmap" style="width: 100%; height: 400px"></div>
