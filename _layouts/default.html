@@ -11,15 +11,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
   <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
   <script src="https://leaflet.github.io/Leaflet.heat/dist/leaflet-heat.js"></script>
-  {% if site.google_analytics %}
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117947515-3"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', '{{ site.google_analytics }}');
+
+    gtag('config', 'UA-117947515-3');
   </script>
-  {% endif %}
+
   <meta charset="UTF-8">
 
   {% seo %}
