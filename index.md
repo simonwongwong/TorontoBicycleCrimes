@@ -19,9 +19,10 @@ Unsurprisingly, the one place where there are no reported bicycle related crimes
 <script type="text/javascript" src="maps/heatmaps.js"></script>
 <script type="text/javascript">initial_map()</script>
 
-Most thefts seem to occur on large streets and public places, but it doesn't mean your bike is safe on private property. About a third of thefts/crimes happen at houses and apartments/condos.
+Most thefts seem to occur on large streets and public places, but it doesn't mean your bike is safe on private property. About a third of thefts/crimes happen at houses and apartments/condos. 
 
 ![location types](plots/locationtype.png)
+<p style="text-align: center;" markdown="1">*[Full list here](tables/full_locationtype.html)*</p>
 
 ## Neighbourhoods
 Each crime is listed with the neighbourhood of where the crime occurred! Waterfront Communities - The Island comes in first place with almost 1400 reported incidents over 4 years and Pleasant View comes in last with only **5**.
