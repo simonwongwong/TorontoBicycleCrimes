@@ -31,7 +31,7 @@ On a lighter note, here are the top 10 neighbourhoods with the fewest bicycle cr
 
 Couldn't find the neighbourhood you were interested? [A full list of neighbourhoods can be found here.](tables/full_neighbourhood_list.html)
 
-## Heat Maps
+## Heat Maps 
 Think your bike is safe? Moving soon? Check the heat map to see where bike thefts are reported.
 
 Unsurprisingly, the one place where there are no reported bicycle related crimes is the Bridle Path. 
@@ -46,6 +46,7 @@ Unsurprisingly, the one place where there are no reported bicycle related crimes
 <script type="text/javascript" src="script/heatmaps.js"></script>
 <script type="text/javascript">initial_map()</script>
 
+<p style="text-align: center;" markdown="1">A full list of [types of crimes and their counts can be found here.](tables/crime_type.html)</p>
 
 Most thefts seem to occur on large streets and public places, but it doesn't mean your bike is safe on private property. More than a third of thefts/crimes happen in houses, apartment buildings and private property. 
 
