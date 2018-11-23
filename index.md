@@ -1,6 +1,6 @@
 # Report
 
-The Toronto Police Service publishes interesting datasets on their [public safety data portal](http://data.torontopolice.on.ca/) and I found a nice dataset on [bicycle-related crimes](http://data.torontopolice.on.ca/datasets/91af6347ff08458e9fa4e06b2acc4e1d_0) that was recently published and I thought it was interesting enough to write about. I have had a bike stolen in the city and it's a horrible feeling -- maybe this data can help you avoid having your bike stolen too. 
+The Toronto Police Service publishes interesting datasets on their [public safety data portal](http://data.torontopolice.on.ca/) and I found a nice dataset on [bicycle-related crimes](http://data.torontopolice.on.ca/datasets/91af6347ff08458e9fa4e06b2acc4e1d_0) that was recently published and I thought it was interesting enough to write about. I have had a bike stolen in the city and it's a horrible feeling -- maybe this data can help you avoid having your bike stolen too. There are also tips on theft-prevention at the end of the report.
 
 Note: the data presented only reflects **reported** crimes, which may not reflect actual bicycle-related crime in the city
 
@@ -84,6 +84,7 @@ This amounts to the average value of a stolen bike to be approximately $907.95, 
 Below is a truncated histogram showing the cost of stolen bicycles throughout Toronto:
 
 <img id="cost_histogram" src="plots/cost_histogram.png" style="width:100%" class='tabcontent'>
+
 <div style="text-align: center;">
   <a id="truncatedhist" onclick="change_image(event,'cost_histogram.png','cost_histogram')">(view truncated, </a>
   <a id="fullhist" onclick="change_image(event,'cost_histogram_full.png','cost_histogram')">view full)</a>
@@ -97,3 +98,5 @@ Do you know what your bicycle's serial number is? Or where to find it? Knowing t
 ![recovery stats](plots/recovery.png)
 
 If you want to have a chance of getting your bike back after it's stolen, please register your bike with the Toronto Police [here](https://www.torontopolice.on.ca/bike/). Your serial number can typically be found on the bottom of your bike, under the [bottom bracket shell](https://www.google.ca/search?q=bottom+bracket+shell). Hopefully Toronto might get something like [Project 529](https://project529.com/garage) where victims can post an alert to fellow cyclists to look out for stolen bikes.
+
+To secure your bike better, consider getting a U-Lock, they are way sturdier than cable locks and are worth it keep your bike safe. Sheldon Brown has a great [webpage on lock-strategy](https://www.sheldonbrown.com/lock-strategy.html). GCN has a [very good video as well](https://www.youtube.com/watch?v=IXNASUSivqg).
