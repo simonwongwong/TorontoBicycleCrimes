@@ -9,12 +9,11 @@ Each crime is listed with the neighbourhood of where the crime occurred! Waterfr
 
 Below the top 10 neighbourhoods for having the most crimes. Click on the tabs to see how things have changed over the years.
 <div class="tab">
-  <!-- <button id="total" class="tablinks" onclick="change_image(event,'worst_neighbourhoods.png')">Total</button> -->
-  <button id="stack" class="tablinks active" onclick="change_image(event,'worst_stack.png')">Total</button>
-  <button id="2017" class="tablinks" onclick="change_image(event,'2017worst.png')">2017</button>
-  <button id="2016" class="tablinks" onclick="change_image(event,'2016worst.png')">2016</button>
-  <button id="2015" class="tablinks" onclick="change_image(event,'2015worst.png')">2015</button>
-  <button id="2014" class="tablinks" onclick="change_image(event,'2014worst.png')">2014</button>
+  <button id="stack" class="tablinks active" onclick="change_image(event,'worst_stack.png','worst_neighbourhood')">Total</button>
+  <button id="2017" class="tablinks" onclick="change_image(event,'2017worst.png','worst_neighbourhood')">2017</button>
+  <button id="2016" class="tablinks" onclick="change_image(event,'2016worst.png','worst_neighbourhood')">2016</button>
+  <button id="2015" class="tablinks" onclick="change_image(event,'2015worst.png','worst_neighbourhood')">2015</button>
+  <button id="2014" class="tablinks" onclick="change_image(event,'2014worst.png','worst_neighbourhood')">2014</button>
 </div>
 <img id="worst_neighbourhood" src="plots/worst_stack.png" style="width:100%">
 
@@ -73,6 +72,23 @@ Bicycle-related crimes (mostly theft) spike during the warmer months and slow do
 Thanks to harsh Canadian winters, your bikes are the most safe around January and February --  when bike thieves take go on vacation using your hard earned money.
 
 ![monthly plot](plots/monthyear.png)
+
+## Cost
+
+Speaking your hard earned money, the sum of all **reported values of the stolen bicycles amounted to over $11,450,000** (excludes 1665 bicycles with "UNKNOWN" values). 
+
+This amounts to the average value of a stolen bike to be approximately $907.95, which seems high. This could either mean there are a lot of "low value" bicycle crimes that aren't being reported or people may be over-reporting the value of their bikes. 
+
+![yearly cost](plots/yearlycost.png)
+
+Below is a truncated histogram showing the cost of stolen bicycles throughout Toronto:
+
+<img id="cost_histogram" src="plots/cost_histogram.png" style="width:100%" class='tabcontent'>
+<div style="text-align: center;">
+  <a id="truncatedhist" onclick="change_image(event,'cost_histogram.png','cost_histogram')">(view truncated, </a>
+  <a id="fullhist" onclick="change_image(event,'cost_histogram_full.png','cost_histogram')">view full)</a>
+</div>
+
 
 ## Prevention and Recovery
 
