@@ -1,42 +1,21 @@
 # Report
 
-The Toronto Police Service publishes interesting datasets on their [public safety data portal](http://data.torontopolice.on.ca/) and I found a nice dataset on [bicycle-related crimes](http://data.torontopolice.on.ca/datasets/91af6347ff08458e9fa4e06b2acc4e1d_0) that was recently published and I thought it was interesting enough to write about. I have had a bike stolen in the city and it's a horrible feeling -- maybe this data can help you avoid having your bike stolen too.
+The Toronto Police Service publishes interesting datasets on their [public safety data portal](http://data.torontopolice.on.ca/) and I found a nice dataset on [bicycle-related crimes](http://data.torontopolice.on.ca/datasets/91af6347ff08458e9fa4e06b2acc4e1d_0) that was recently published and I thought it was interesting enough to write about. I have had a bike stolen in the city and it's a horrible feeling -- maybe this data can help you avoid having your bike stolen too. 
 
 Note: the data presented only reflects **reported** crimes, which may not reflect actual bicycle-related crime in the city
-
-## Heat Maps
-Think your bike is safe? Check the heat map to see where bike thefts are reported.
-
-Unsurprisingly, the one place where there are no reported bicycle related crimes is the Bridle Path. 
-<div class="tab">
-  <button id="crime" class="tablinks" onclick="generate_heatmap('crime')">All crimes</button>
-  <button id="theft" class="tablinks" onclick="generate_heatmap('theft')">Thefts</button>
-  <button id="be" class="tablinks" onclick="generate_heatmap('be')">Breaking & Entering</button>
-  <button id="ebike" class="tablinks" onclick="generate_heatmap('ebike')">E-Bike crimes</button>
-</div>
-
-<div class="folium-map" id="heatmap" style="width: 100%; height: 400px"></div>
-<script type="text/javascript" src="script/heatmaps.js"></script>
-<script type="text/javascript">initial_map()</script>
-
-Most thefts seem to occur on large streets and public places, but it doesn't mean your bike is safe on private property. About a third of thefts/crimes happen at houses and apartments/condos. 
-
-![location types](plots/locationtype.png)
-<p style="text-align: center;" markdown="1">*[Full list here](tables/full_locationtype.html)*</p>
-
 ## Neighbourhoods
 Each crime is listed with the neighbourhood of where the crime occurred! Waterfront Communities - The Island comes in first place with almost 1400 reported incidents over 4 years and Pleasant View comes in last with only **5**.
 
 Below the top 10 neighbourhoods for having the most crimes. Click on the tabs to see how things have changed over the years.
 <div class="tab">
-  <button id="total" class="tablinks active" onclick="change_image(event,'worst_neighbourhoods.png')">Total</button>
-  <button id="stack" class="tablinks" onclick="change_image(event,'worst_stack.png')">Stack</button>
+  <!-- <button id="total" class="tablinks" onclick="change_image(event,'worst_neighbourhoods.png')">Total</button> -->
+  <button id="stack" class="tablinks active" onclick="change_image(event,'worst_stack.png')">Total</button>
   <button id="2017" class="tablinks" onclick="change_image(event,'2017worst.png')">2017</button>
   <button id="2016" class="tablinks" onclick="change_image(event,'2016worst.png')">2016</button>
   <button id="2015" class="tablinks" onclick="change_image(event,'2015worst.png')">2015</button>
   <button id="2014" class="tablinks" onclick="change_image(event,'2014worst.png')">2014</button>
 </div>
-<img id="worst_neighbourhood" src="plots/worst_neighbourhoods.png" style="width:100%">
+<img id="worst_neighbourhood" src="plots/worst_stack.png" style="width:100%">
 
 The worst 4 neighbourhoods: *Waterfront Communities - The Island, Church-Yonge Corridor, Bay Street Corridor and the Annex* are consistently the worst places to be a bicycle owner. 
 
@@ -46,8 +25,31 @@ Rosedale-Moore Park receives the **most improved award** for being in the top 10
 
 South Riverdale gets the *least improved award* for making the top 10 (2014 - 2017) despite only being in the top 10 for 2016 and 2017.
 
+On a lighter note, here are the top 10 neighbourhoods with the fewest bicycle crimes:
+
 ![best neighbourhoods](plots/best_neighbourhoods.png)
 
+Couldn't find the neighbourhood you were interested? [A full list of neighbourhoods can be found here.](tables/full_neighbourhood_list.html)
+
+## Heat Maps
+Think your bike is safe? Moving soon? Check the heat map to see where bike thefts are reported.
+
+Unsurprisingly, the one place where there are no reported bicycle related crimes is the Bridle Path. 
+<div class="tab">
+  <button id="crime" class="tablinks" onclick="generate_heatmap('crime')">All Crimes</button>
+  <button id="theft" class="tablinks" onclick="generate_heatmap('theft')">Thefts</button>
+  <button id="be" class="tablinks" onclick="generate_heatmap('be')">Breaking & Entering</button>
+  <button id="ebike" class="tablinks" onclick="generate_heatmap('ebike')">E-Bike Crimes</button>
+</div>
+
+<div class="folium-map" id="heatmap" style="width: 100%; height: 400px"></div>
+<script type="text/javascript" src="script/heatmaps.js"></script>
+<script type="text/javascript">initial_map()</script>
+
+Most thefts seem to occur on large streets and public places, but it doesn't mean your bike is safe on private property. More than a third of thefts/crimes happen in houses, apartment buildings and private property. 
+
+![location types](plots/locationtype.png)
+<p style="text-align: center;" markdown="1">*[Full list here](tables/full_locationtype.html)*</p>
 
 ## Yearly Data
 
