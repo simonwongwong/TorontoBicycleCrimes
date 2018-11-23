@@ -101,3 +101,5 @@ Do you know what your bicycle's serial number is? Or where to find it? Knowing t
 If you want to have a chance of getting your bike back after it's stolen, please register your bike with the Toronto Police [here](https://www.torontopolice.on.ca/bike/). Your serial number can typically be found on the bottom of your bike, under the [bottom bracket shell](https://www.google.ca/search?q=bottom+bracket+shell). Hopefully Toronto might get something like [Project 529](https://project529.com/garage) where victims can post an alert to fellow cyclists to look out for stolen bikes.
 
 To secure your bike better, consider getting a U-Lock, they are way sturdier than cable locks and are worth it keep your bike safe. Sheldon Brown has a great [webpage on lock-strategy](https://www.sheldonbrown.com/lock-strategy.html). GCN has a [very good video as well](https://www.youtube.com/watch?v=IXNASUSivqg).
+
+Thank you for reading! 
