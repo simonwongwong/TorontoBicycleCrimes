@@ -2,6 +2,7 @@
 <html lang="{{ site.lang | default: "en-US" }}">
 
 <head>
+  <link rel="shortcut icon" type="image/png" href="{{ "/favicon.png" | prepend: site.baseurl }}">
   <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
   <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -15,7 +16,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117947515-3"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'UA-117947515-3');
@@ -29,6 +30,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   <link rel="stylesheet" href="css/tabs.css">
+  <script type="text/javascript" src="script/image_swapper.js"></script>
 
 
 </head>

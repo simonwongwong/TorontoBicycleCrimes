@@ -16,7 +16,7 @@ Unsurprisingly, the one place where there are no reported bicycle related crimes
 </div>
 
 <div class="folium-map" id="heatmap" style="width: 100%; height: 400px"></div>
-<script type="text/javascript" src="maps/heatmaps.js"></script>
+<script type="text/javascript" src="script/heatmaps.js"></script>
 <script type="text/javascript">initial_map()</script>
 
 Most thefts seem to occur on large streets and public places, but it doesn't mean your bike is safe on private property. About a third of thefts/crimes happen at houses and apartments/condos. 
@@ -27,9 +27,24 @@ Most thefts seem to occur on large streets and public places, but it doesn't mea
 ## Neighbourhoods
 Each crime is listed with the neighbourhood of where the crime occurred! Waterfront Communities - The Island comes in first place with almost 1400 reported incidents over 4 years and Pleasant View comes in last with only **5**.
 
-Here the top 10 neighbourhoods for most crimes and fewest crimes:
+Below the top 10 neighbourhoods for having the most crimes. Click on the tabs to see how things have changed over the years.
+<div class="tab">
+  <button id="total" class="tablinks active" onclick="change_image(event,'worst_neighbourhoods.png')">Total</button>
+  <button id="stack" class="tablinks" onclick="change_image(event,'worst_stack.png')">Stack</button>
+  <button id="2017" class="tablinks" onclick="change_image(event,'2017worst.png')">2017</button>
+  <button id="2016" class="tablinks" onclick="change_image(event,'2016worst.png')">2016</button>
+  <button id="2015" class="tablinks" onclick="change_image(event,'2015worst.png')">2015</button>
+  <button id="2014" class="tablinks" onclick="change_image(event,'2014worst.png')">2014</button>
+</div>
+<img id="worst_neighbourhood" src="plots/worst_neighbourhoods.png" style="width:100%">
 
-![worst neighbourhoods](plots/worst_neighbourhoods.png)
+The worst 4 neighbourhoods: *Waterfront Communities - The Island, Church-Yonge Corridor, Bay Street Corridor and the Annex* are consistently the worst places to be a bicycle owner. 
+
+Over the four years, the other neighbourhoods in the top 10 move around and swap with each other without any particular trend. 
+
+Rosedale-Moore Park receives the **most improved award** for being in the top 10 in 2014 and 2015 but not being in the top 10 for 2014 - 2017 (although, still 11th overall)! 
+
+South Riverdale gets the *least improved award* for making the top 10 (2014 - 2017) despite only being in the top 10 for 2016 and 2017.
 
 ![best neighbourhoods](plots/best_neighbourhoods.png)
 
