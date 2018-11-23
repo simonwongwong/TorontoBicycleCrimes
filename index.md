@@ -3,8 +3,9 @@
 The Toronto Police Service publishes interesting datasets on their [public safety data portal](http://data.torontopolice.on.ca/) and I found a nice dataset on [bicycle-related crimes](http://data.torontopolice.on.ca/datasets/91af6347ff08458e9fa4e06b2acc4e1d_0) that was recently published and I thought it was interesting enough to write about. I have had a bike stolen in the city and it's a horrible feeling -- maybe this data can help you avoid having your bike stolen too. 
 
 Note: the data presented only reflects **reported** crimes, which may not reflect actual bicycle-related crime in the city
+
 ## Neighbourhoods
-Each crime is listed with the neighbourhood of where the crime occurred! Waterfront Communities - The Island comes in first place with almost 1400 reported incidents over 4 years and Pleasant View comes in last with only **5**.
+Each crime is listed with the neighbourhood of where the crime occurred! Waterfront Communities - The Island comes in first place with almost **1400 reported incidents** over 4 years and Pleasant View comes in last with only **5**.
 
 Below the top 10 neighbourhoods for having the most crimes. Click on the tabs to see how things have changed over the years.
 <div class="tab">
@@ -46,18 +47,30 @@ Unsurprisingly, the one place where there are no reported bicycle related crimes
 <script type="text/javascript" src="script/heatmaps.js"></script>
 <script type="text/javascript">initial_map()</script>
 
+
 Most thefts seem to occur on large streets and public places, but it doesn't mean your bike is safe on private property. More than a third of thefts/crimes happen in houses, apartment buildings and private property. 
 
 ![location types](plots/locationtype.png)
 <p style="text-align: center;" markdown="1">*[Full list here](tables/full_locationtype.html)*</p>
 
-## Yearly Data
+## Time Data
 
-The data shows that the number of reported bicycle crimes have increased in 2016 and 2017 compared to 2014 and 2015. This could be due to the [increase in ridership levels throughout 2016 and 2017 due to better cycling infrastructure](https://www.cycleto.ca/news/major-increase-torontonians-biking-work-34-some-neighbourhoods). The unfortunate reality is that an increase in cyclists also means an increase in bicycle thefts.
+Be careful, bicycle thefts are on the rise. The data shows that the number of reported bicycle crimes have increased in 2016 and 2017 compared to 2014 and 2015. This could be due to the [increase in ridership levels throughout 2016 and 2017 due to better cycling infrastructure](https://www.cycleto.ca/news/major-increase-torontonians-biking-work-34-some-neighbourhoods). The unfortunate reality is that an increase in cyclists also means an increase in bicycle thefts.
 
 ![yearly plot](plots/yearly.png)
 
-Bicycle-related crimes (mostly theft) spike during the warmer months and slow down during the winter, which makes sense due to lower ridership:
+Do you know when your bicycle is most likely to be stolen? You might think your bicycle is less safe locked during the night but that *may not* be true. 
+
+The plot below seems to show that there are way more thefts during the day than overnight, however because the data only shows **reported** crimes, this data is skewed to be biased towards daytime crimes. 
+
+There are peaks at around 9 AM, 12 PM and 6 PM (corresponding to morning commute, lunch, and evening commute), this is likely because those are the times when people are most likely to *notice* that their bike has gone missing, again emphasizing the fact that this is only reported data.
+
+![hourly plot](plots/hourly.png)
+
+
+Bicycle-related crimes (mostly theft) spike during the warmer months and slow down during the winter, which makes sense due to lower ridership. The 1-month period with the most reported crimes was July 2017 with 591, or about **19 per day**! 
+
+Thanks to harsh Canadian winters, your bikes are the most safe around January and February --  when bike thieves take go on vacation using your hard earned money.
 
 ![monthly plot](plots/monthyear.png)
 
