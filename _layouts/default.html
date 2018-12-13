@@ -30,6 +30,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   <link rel="stylesheet" href="css/tabs.css">
+  <link rel="stylesheet" href="../css/table.css">
   <script type="text/javascript" src="script/image_swapper.js"></script>
 
 
@@ -40,7 +41,7 @@
     <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
     <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
     {% if site.github.is_project_page %}
-    <a href="https://github.com/simonwongwong/" class="btn">View on GitHub</a>
+    <a href="https://github.com/simonwongwong/TorontoBicycleCrimes" class="btn">View on GitHub</a>
     {% endif %}
     {% if site.show_downloads %}
     <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
@@ -53,11 +54,12 @@
 
     <footer class="site-footer">
       {% if site.github.is_project_page %}
-      <span class="site-footer-owner"><a href="https://github.com/simonwongwong/">{{ site.github.repository_name }}</a>
+      <span class="site-footer-owner"><a href="https://github.com/simonwongwong/TorontoBicycleCrimes">{{
+          site.github.repository_name }}</a>
         is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.
         <br>
         <br>
-        Contact information <a href="{{ site.github.owner_url }}">here</a>
+        Contact information and portfolio <a href="https://simonwong.io/">here</a>
       </span>
       {% endif %}
       Thanks to the Toronto Police Service for sharing this data.

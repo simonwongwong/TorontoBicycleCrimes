@@ -59,9 +59,9 @@ Be careful, bicycle thefts are on the rise. The data shows that the number of re
 
 ![yearly plot](plots/yearly.png)
 
-Do you know when your bicycle is most likely to be stolen? You might think your bicycle is less safe locked during the night but that *may not* be true. 
+Do you know when your bicycle is most likely to be stolen? You might think your bicycle is less safe locked during the night but that *is not necessarily* be true. 
 
-The plot below seems to show that there are way more thefts during the day than overnight, however because the data only shows **reported** crimes, this data is skewed to be biased towards daytime crimes. 
+The plot below shows that there are way more thefts during the day than overnight, however because the data only shows **reported** crimes, this data is skewed to be biased towards daytime crimes. 
 
 There are peaks at around 9 AM, 12 PM and 6 PM (corresponding to morning commute, lunch, and evening commute), this is likely because those are the times when people are most likely to *notice* that their bike has gone missing, again emphasizing the fact that this is only reported data.
 
@@ -80,6 +80,7 @@ Speaking your hard earned money, the sum of all **reported values of the stolen 
 
 This amounts to the average value of a stolen bike to be approximately $907.95, which seems high. This could either mean there are a lot of "low value" bicycle crimes that aren't being reported or people may be over-reporting the value of their bikes. 
 
+Of the recovered 182 recovered bicycles (~1.27%), 118 had reported values which summed up to a measly **$120,300**. The mean cost of the recovered bicycles was $1019 and median cost was $700.
 ![yearly cost](plots/yearlycost.png)
 
 Below is a truncated histogram showing the cost of stolen bicycles throughout Toronto:
@@ -101,5 +102,17 @@ Do you know what your bicycle's serial number is? Or where to find it? Knowing t
 If you want to have a chance of getting your bike back after it's stolen, please register your bike with the Toronto Police [here](https://www.torontopolice.on.ca/bike/). Your serial number can typically be found on the bottom of your bike, under the [bottom bracket shell](https://www.google.ca/search?q=bottom+bracket+shell). Hopefully Toronto might get something like [Project 529](https://project529.com/garage) where victims can post an alert to fellow cyclists to look out for stolen bikes.
 
 To secure your bike better, consider getting a U-Lock, they are way sturdier than cable locks and are worth it keep your bike safe. Sheldon Brown has a great [webpage on lock-strategy](https://www.sheldonbrown.com/lock-strategy.html). GCN has a [very good video as well](https://www.youtube.com/watch?v=IXNASUSivqg).
+
+## Miscellaneous Stats
+### Bicycle Color
+Can you guess what the most common color of stolen bicycles? It's black, followed by blue (probably due to the sheer amount of blue Supercycles). A full list of colors of stolen bicycles [here](tables/color.html).
+
+The most stolen type of bicycle are Mountain Bikes with at least 4,444 of the 14,280 reported being mountain bikes. Only 3 of the 14,280 stolen bikes were unicycles (although, not technically bicycles).
+
+<div style="width: 26%">
+{% include_relative tables/types.html %}
+</div>
+
+The dataset also includes data on the brand of bicycles stolen, but the data can be pretty cryptic (some brands are abbreviated to two letters). A full [table can be found here.](tables/brand.html)
 
 Thank you for reading! 
