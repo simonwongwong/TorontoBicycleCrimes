@@ -1,0 +1,31 @@
+table{
+	border-collapse: collapse;
+}
+
+th {
+    background-color: #155799;
+    color: white;
+}
+
+
+th, td {
+	padding-left: 5px;
+	padding-right: 5px;
+	vertical-align: middle;
+
+}
+
+table tbody tr td table thead {
+	display: none;
+}
+
+tr:hover {background-color: #C4C4C4;}
+
+td.labelled a:link{
+	color: black;
+	text-decoration: none;
+}
+td.labelled a:visited{
+	color:black;
+	text-decoration: none;
+}

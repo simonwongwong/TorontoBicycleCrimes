@@ -16,7 +16,7 @@
 repository: simonwongwong/TorontoBicycleCrimes
 theme: jekyll-theme-cayman
 title: Toronto Bicycle Theft-related Crime Statistics
-description: A report on Toronto's bicycle theft-related crimes between 2014 and 2017
+description: A report on Toronto's bicycle theft-related crimes
 
 
 baseurl: "/TorontoBicycleCrimes" # the subpath of your site, e.g. /blog
